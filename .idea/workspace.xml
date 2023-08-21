@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9b36bcd-eccb-43ae-aac9-fb28bb1e0a25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/SpringRestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/CommonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/LoggedResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/UserRoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/filter/jwtfilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/userService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/springREST/com/example/springREST/SpringRestApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/SpringRestApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/ApplicationConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dao/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dto/CommonResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dto/LoggedResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dto/LoginRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/Roles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User$UserBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/UserRoles$UserRolesBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/UserRoles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/filter/jwtfilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/CustomUserDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/JwtService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/userService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-REST-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/spring-REST-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-springREST.com.example.springREST.SpringRestApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/springREST.com.example.springREST.SpringRestApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/springREST/com/example/springREST/SpringRestApplicationTests.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TNUywK0iyXOHvbb5uaKNLLN7kl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/raedabdulmajeed/Desktop/JAVA-projects/springboot-rest-api",
+    "settings.editor.selected.configurable": "advanced.settings"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="springboot-rest-api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="springboot-rest-api" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9b36bcd-eccb-43ae-aac9-fb28bb1e0a25" name="Changes" comment="" />
+      <created>1690883290416</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690883290416</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="development" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

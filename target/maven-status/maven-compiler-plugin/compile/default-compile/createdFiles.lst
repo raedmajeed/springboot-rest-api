@@ -1,0 +1,13 @@
+springREST/com/example/springREST/controller/UserController.class
+springREST/com/example/springREST/config/ApplicationConfig.class
+springREST/com/example/springREST/dao/UserRepository.class
+springREST/com/example/springREST/entity/User$UserBuilder.class
+springREST/com/example/springREST/entity/Roles.class
+springREST/com/example/springREST/entity/UserRoles$UserRolesBuilder.class
+springREST/com/example/springREST/dto/LoggedResponse.class
+springREST/com/example/springREST/entity/User.class
+springREST/com/example/springREST/entity/UserRoles.class
+springREST/com/example/springREST/dto/CommonResponse.class
+springREST/com/example/springREST/service/userService.class
+springREST/com/example/springREST/config/SecurityConfig.class
+springREST/com/example/springREST/SpringRestApplication.class
