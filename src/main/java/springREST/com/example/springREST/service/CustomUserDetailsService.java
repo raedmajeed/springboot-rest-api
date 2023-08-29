@@ -14,6 +14,7 @@ import springREST.com.example.springREST.dao.UserRepository;
 @Service
 @Data
 public class CustomUserDetailsService implements UserDetailsService {
+
     @Autowired
     private UserRepository userRepository;
 
@@ -23,13 +24,15 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        springREST.com.example.springREST.entity.User user = userRepository.getUserByUsername(username);
+        springREST.com.example.springREST.entity.User user = userRepository.findByUsername(username);
 
-        UserDetails uDetails = User.withUsername(user.getUsername())
+        if (user == null) {
+            System.out.println("ERROR");
+            return null;
+        }
+        return User.withUsername(user.getUsername())
                 .password(user.getPassword())
                 .roles(user.getRole())
                 .build();
-        return uDetails;
     }
-
 }

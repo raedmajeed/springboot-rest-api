@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import springREST.com.example.springREST.Constants.Roles;
 
 import java.util.*;
 
@@ -20,22 +21,15 @@ import java.util.*;
 @Table(
         name = "user_table",
         uniqueConstraints = @UniqueConstraint(
-                name = "user_name",
+                name = "username",
                 columnNames = "username"
         )
 )
 public class User implements UserDetails {
+
     @Id
-    @SequenceGenerator(
-            name = "seq_gen",
-            sequenceName = "seq_gen",
-            allocationSize = 10
-    )
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "seq_gen"
-    )
-    private long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
 
     @Column(
             name = "username",
@@ -43,38 +37,42 @@ public class User implements UserDetails {
     )
     private String username;
     private String password;
-
+    private String email;
+    private String dob;
     private String role;
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.singleton(new SimpleGrantedAuthority(role));
+        return Collections.singleton(new SimpleGrantedAuthority(Roles.ADMIN.name()));
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return this.username;
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     }
-
-//    @Enumerated(EnumType.STRING)
-//    @OneToMany(
-//            cascade = CascadeType.ALL
-//    )
-//    private List<UserRoles> roles;
-
 }
+

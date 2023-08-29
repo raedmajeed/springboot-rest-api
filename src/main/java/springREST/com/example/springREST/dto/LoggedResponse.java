@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 public class LoggedResponse extends CommonResponse{
     private String token;
 
-
     public String getToken() {
         return token;
     }

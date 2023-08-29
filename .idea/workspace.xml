@@ -5,57 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9b36bcd-eccb-43ae-aac9-fb28bb1e0a25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/SpringRestApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/CommonResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/LoggedResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/UserRoles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/filter/jwtfilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/userService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/springREST/com/example/springREST/SpringRestApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/SpringRestApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/ApplicationConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/SecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dao/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dto/CommonResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dto/LoggedResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dto/LoginRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/Roles.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User$UserBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/UserRoles$UserRolesBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/UserRoles.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/filter/jwtfilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/CustomUserDetailsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/JwtService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/userService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/spring-REST-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/spring-REST-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-springREST.com.example.springREST.SpringRestApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/springREST.com.example.springREST.SpringRestApplicationTests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/springREST/com/example/springREST/SpringRestApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/Constants/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/CustomDaoAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/adminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/adminRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/CustomAdminDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/SpringRestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/SpringRestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/LoggedResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/LoggedResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/UserRoles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/filter/jwtfilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/filter/jwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/userService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/userService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/SpringRestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/SpringRestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dao/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dao/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dto/LoggedResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dto/LoggedResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/Roles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/UserRoles$UserRolesBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/UserRoles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/filter/jwtfilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/filter/jwtfilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/JwtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/JwtService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/userService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/userService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-REST-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-REST-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-springREST.com.example.springREST.SpringRestApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/springREST.com.example.springREST.SpringRestApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/springREST/com/example/springREST/SpringRestApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +65,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -95,12 +96,20 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/raedabdulmajeed/Desktop/JAVA-projects/springboot-rest-api",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "development",
+    "last_opened_file_path": "/Users/raedabdulmajeed/Desktop/JAVA-projects/springboot-rest-api-jwt",
     "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="springREST.com.example.springREST.SpringRestApplication" />
+      <module name="spring-REST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="springboot-rest-api" />
       <method v="2">

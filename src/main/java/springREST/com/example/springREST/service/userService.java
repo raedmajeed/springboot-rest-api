@@ -6,13 +6,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;
+import springREST.com.example.springREST.Constants.Roles;
 import springREST.com.example.springREST.dao.UserRepository;
 import springREST.com.example.springREST.dto.CommonResponse;
 import springREST.com.example.springREST.dto.LoggedResponse;
@@ -43,63 +42,70 @@ public class userService {
 
         CommonResponse response = new CommonResponse();
 
-        User userDetail = User.builder()
+        User newUser = User.builder()
                 .username(user.getUsername())
                 .password(passwordEncoder.encode(user.getPassword()))
-                .role(user.getRole())
+                .role(Roles.USER.name())
+                .email(user.getEmail())
+                .dob(user.getDob())
                 .build();
 
-        userRepository.save(userDetail);
-        response.setSuccess(true);
-        response.setResponseMessage("USER REGISTERED SUCCESSFULLY");
 
-        return new ResponseEntity<CommonResponse>(
-                response,
-                HttpStatus.OK
-        );
+        User userCheck = userRepository.findByUsername(user.getUsername());
+        if (userCheck != null) {
+            System.out.println("USER ALREADY EXISTS");
+            response.setSuccess(false);
+            response.setResponseMessage("USER EXISTS IN DB");
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
+
+        userRepository.save(newUser);
+        response.setResponseMessage("USER REGISTERED SUCCESSFULLY");
+        response.setSuccess(true);
+        return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
     }
 
     public ResponseEntity<LoggedResponse> loginAuthenticate(@RequestBody LoginRequest loginRequest) {
-        userRepository.findByUsername(loginRequest.getUsername());
+        String jwtToken = null;
+        User user = userRepository.findByUsername(loginRequest.getUsername());
+        UserDetails userDetails = customUserDetailsService.loadUserByUsername(loginRequest.getUsername());
 
-        LoggedResponse lg = new LoggedResponse();
+        LoggedResponse response = new LoggedResponse();
 
-        UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword());
+        UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(
+                loginRequest.getUsername(),
+                loginRequest.getPassword(),
+                userDetails.getAuthorities()
+        );
 
         authenticationManager.authenticate(auth);
 
-        UserDetails userDetails = customUserDetailsService.loadUserByUsername(loginRequest.getUsername());
+        if (!user.isEnabled()) {
+            response.setResponseMessage("Failed to login");
+            response.setSuccess(true);
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
 
-        User user = userRepository.getUserByUsername(loginRequest.getUsername());
+        System.out.println(userDetails.getAuthorities());
 
-//        if (user.getStatus() != UserStatus.ACTIVE.value()) {
-//            response.setResponseMessage("Failed to login");
-//            response.setSuccess(true);
-//            return new ResponseEntity(response, HttpStatus.BAD_REQUEST);
-//        }
+        for (GrantedAuthority grantedAuthority : userDetails.getAuthorities()) {
+            System.out.println(grantedAuthority.getAuthority());
+            System.out.println(user.getRole());
+            if (grantedAuthority.getAuthority().contains(user.getRole())) {
+                jwtToken = jwtService.generateToken(userDetails.getUsername());
+            }
+        }
 
-//        for (GrantedAuthority grantedAuthory : userDetails.getAuthorities()) {
-//            if (grantedAuthory.getAuthority().equals(loginRequest.getRole())) {
-        final String jwtToken = jwtService.generateToken(userDetails.getUsername());
-//            }
-//        }
-//
-        // user is authenticated
         if (jwtToken != null) {
-
-            lg.setResponseMessage("Logged in sucessful");
-            lg.setSuccess(true);
-            lg.setToken(jwtToken);
-            return new ResponseEntity<>(lg, HttpStatus.OK);
-
+            response.setResponseMessage("Logged in successful");
+            response.setSuccess(true);
+            response.setToken(jwtToken);
+            return new ResponseEntity<>(response, HttpStatus.OK);
         }
-
         else {
-
-            lg.setResponseMessage("Failed to login");
-            lg.setSuccess(true);
-            return new ResponseEntity<>(lg, HttpStatus.BAD_REQUEST);
+            response.setResponseMessage("Failed to login");
+            response.setSuccess(false);
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
-
     }
 }

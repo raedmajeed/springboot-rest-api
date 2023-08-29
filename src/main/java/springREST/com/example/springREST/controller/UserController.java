@@ -21,19 +21,9 @@ public class UserController {
         return userService.registerUser(user);
     }
 
-    @GetMapping("/user/register")
-    public String login() {
-        return "here";
-    }
-
-    @GetMapping("/user/login")
-    public String loginPage() {
-        return "null";
-    }
 
     @PostMapping("/user/login")
     public ResponseEntity<LoggedResponse> loggedInPage(@RequestBody LoginRequest loginRequest) {
-        System.out.println(loginRequest);
         return userService.loginAuthenticate(loginRequest);
     }
 
