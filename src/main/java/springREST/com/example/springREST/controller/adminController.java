@@ -49,6 +49,18 @@ public class adminController {
         return adminService.displayUser(id);
     }
 
+    @PostMapping("/admin/lockUser/{id}")
+    public ResponseEntity<CommonResponse> lockUser(@PathVariable int id) {
+        return adminService.lockUnlockUser(id, true);
+    }
+
+    @PostMapping("/admin/unlockUser/{id}")
+    public ResponseEntity<CommonResponse> unlockUser(@PathVariable int id) {
+        return adminService.lockUnlockUser(id, false);
+    }
+
+
+
 //    @PostMapping("/admin/logout")
 //    public ResponseEntity<CommonResponse> logout() {
 //        return adminService.logout();

@@ -108,24 +108,22 @@ class UserRepositoryTest {
     @Test
     public void update() {
         CommonResponse response = new CommonResponse();
-        Optional<User> userCheck = userRepository.findById(2);
+        Optional<User> userCheck = userRepository.findById(452);
+
         if (userCheck.isEmpty()) {
+            response.setResponseMessage("NOT FOUND");
             response.setSuccess(false);
-            response.setResponseMessage("User not found");
-            return;
+            response.setStatus(HttpStatus.BAD_REQUEST);
         }
 
-//        BeanUtils.copyProperties(user, userCheck, "id");
         User userFromDB = userCheck.get();
-        userFromDB.setUsername("ssss");
-        userFromDB.setDob("1111");
-//        userFromDB.setPassword(passwordEncoder.encode(user.getPassword()));
-//
+        userFromDB.setAccountNonLocked(false);
         userRepository.save(userFromDB);
-        Optional<User> userCheck1 = userRepository.findById(2);
-        System.out.println(userCheck1.get());
+        System.out.println(userRepository.findById(452).get());
+
+        response.setResponseMessage("USER LOCKED");
         response.setSuccess(true);
-        response.setResponseMessage("UPDATED SUCCESSFULLY");
-    }
+        response.setStatus(HttpStatus.ACCEPTED);
+        }
 
 }

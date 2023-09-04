@@ -158,7 +158,7 @@ public class AdminService {
         Optional<User> userOptional = userRepository.findById(id);
 
         if (userOptional.isEmpty()) {
-            jsonResponse.setResponseMessage("SNOT FOUND");
+            jsonResponse.setResponseMessage("NOT FOUND");
             jsonResponse.setSuccess(false);
             jsonResponse.setStatus(HttpStatus.BAD_REQUEST);
             return new ResponseEntity<>(jsonResponse, HttpStatus.BAD_REQUEST);
@@ -201,5 +201,29 @@ public class AdminService {
         jsonResponse.setSuccess(true);
         jsonResponse.setStatus(HttpStatus.ACCEPTED);
         return new ResponseEntity<>(jsonResponse, HttpStatus.ACCEPTED);
+    }
+
+    public ResponseEntity<CommonResponse> lockUnlockUser(int id, boolean flag) {
+        System.out.println(id);
+        CommonResponse response = new CommonResponse();
+        Optional<User> userCheck = userRepository.findById(id);
+
+        if (userCheck.isEmpty()) {
+            response.setResponseMessage("USER NOT FOUND");
+            response.setSuccess(false);
+            response.setStatus(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
+
+        User userFromDB = userCheck.get();
+        userFromDB.setAccountNonLocked(!flag);
+        userRepository.save(userFromDB);
+
+        if (flag) response.setResponseMessage("USER LOCKED");
+        else response.setResponseMessage("USER UNLOCKED");
+
+        response.setSuccess(true);
+        response.setStatus(HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
     }
 }

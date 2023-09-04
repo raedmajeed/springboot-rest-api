@@ -40,6 +40,8 @@ public class User implements UserDetails {
     private String email;
     private String dob;
     private String role;
+    @Column(name = "account_non_locked", columnDefinition = "default bit 1")
+    private Boolean AccountNonLocked;
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singleton(new SimpleGrantedAuthority(Roles.USER.name()));
@@ -62,7 +64,7 @@ public class User implements UserDetails {
 
     @Override
     public boolean isAccountNonLocked() {
-        return true;
+        return AccountNonLocked;
     }
 
     @Override

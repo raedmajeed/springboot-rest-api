@@ -49,6 +49,7 @@ public class userService {
                 .role(Roles.USER.name())
                 .email(user.getEmail())
                 .dob(user.getDob())
+                .AccountNonLocked(true)
                 .build();
 
         User userCheck = userRepository.findByUsername(user.getUsername());
@@ -81,8 +82,8 @@ public class userService {
 
         authenticationManager.authenticate(authenticationToken);
 
-        if (!user.isEnabled()) {
-            response.setResponseMessage("Failed to login");
+        if (!user.isAccountNonLocked()) {
+            response.setResponseMessage("Failed to login, user disabled");
             response.setSuccess(false);
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }

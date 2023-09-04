@@ -27,8 +27,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         springREST.com.example.springREST.entity.User user = userRepository.findByUsername(username);
 
         if (user == null) {
-            System.out.println("ERROR");
-            return null;
+            throw new UsernameNotFoundException("NO USER FOUND");
         }
         return User.withUsername(user.getUsername())
                 .password(user.getPassword())
