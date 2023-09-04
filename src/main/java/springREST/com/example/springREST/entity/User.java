@@ -42,7 +42,7 @@ public class User implements UserDetails {
     private String role;
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.singleton(new SimpleGrantedAuthority(Roles.ADMIN.name()));
+        return Collections.singleton(new SimpleGrantedAuthority(Roles.USER.name()));
     }
 
     @Override

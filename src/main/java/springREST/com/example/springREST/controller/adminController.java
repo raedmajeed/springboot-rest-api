@@ -11,12 +11,12 @@ import springREST.com.example.springREST.dto.JsonResponse;
 import springREST.com.example.springREST.dto.LoggedResponse;
 import springREST.com.example.springREST.dto.LoginRequest;
 import springREST.com.example.springREST.entity.User;
-import springREST.com.example.springREST.service.adminService;
+import springREST.com.example.springREST.service.AdminService;
 
 @RestController
 public class adminController {
     @Autowired
-    private adminService adminService;
+    private AdminService adminService;
     @PostMapping("/admin/login")
     public ResponseEntity<LoggedResponse> adminLoginAuthenticate(@RequestBody LoginRequest loginRequest) {
         return adminService.adminLoginAuthenticate(loginRequest);

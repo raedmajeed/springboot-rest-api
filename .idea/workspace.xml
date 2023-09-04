@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9b36bcd-eccb-43ae-aac9-fb28bb1e0a25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/JsonResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/springREST/com/example/springREST/dao/UserRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/CustomDaoAuthenticationProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/adminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/adminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/adminRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/filter/jwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/filter/jwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/CustomAdminDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/userService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/userService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/adminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/adminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dao/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dao/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dao/adminRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/filter/jwtfilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/filter/jwtfilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/CustomAdminDetailsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/JwtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/JwtService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/adminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/adminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/userService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/userService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;multiple-dao&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/raedabdulmajeed/Desktop/JAVA-projects/springboot-rest-api-jwt&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "raed__dev",
+    "last_opened_file_path": "/Users/raedabdulmajeed/Desktop/JAVA-projects/springboot-rest-api-jwt",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -258,22 +240,13 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java</url>
-          <line>87</line>
-          <properties class="springREST.com.example.springREST.service.adminService" method="deleteUser">
+          <url>file://$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/AdminService.java</url>
+          <line>86</line>
+          <properties class="springREST.com.example.springREST.service.AdminService" method="deleteUser">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java</url>
-          <line>103</line>
-          <properties class="springREST.com.example.springREST.service.adminService" method="updateUser">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/springREST/com/example/springREST/dao/UserRepositoryTest.java</url>

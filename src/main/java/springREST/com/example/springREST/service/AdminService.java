@@ -9,16 +9,15 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
+import springREST.com.example.springREST.Constants.Roles;
 import springREST.com.example.springREST.dao.UserRepository;
 import springREST.com.example.springREST.dto.CommonResponse;
 import springREST.com.example.springREST.dto.JsonResponse;
 import springREST.com.example.springREST.dto.LoggedResponse;
 import springREST.com.example.springREST.dto.LoginRequest;
-//import springREST.com.example.springREST.service.CustomUserDetailsService;
 import springREST.com.example.springREST.entity.User;
 
 import java.util.HashMap;
@@ -27,9 +26,10 @@ import java.util.Map;
 import java.util.Optional;
 
 @Service
-public class adminService {
+public class AdminService {
     @Autowired
     private CustomUserDetailsService customUserDetailsService;
+
     @Autowired
     private PasswordEncoder passwordEncoder;
 
@@ -67,7 +67,7 @@ public class adminService {
         }
 
         for (GrantedAuthority grantedAuthority : userDetails.getAuthorities()) {
-            if (grantedAuthority.getAuthority().contains("ADMIN")){
+            if (grantedAuthority.getAuthority().contains("ADMIN")) {
                 jwtToken = jwtService.generateToken(userDetails.getUsername());
             }
         }
@@ -77,8 +77,7 @@ public class adminService {
             response.setSuccess(true);
             response.setToken(jwtToken);
             return new ResponseEntity<>(response, HttpStatus.OK);
-        }
-        else {
+        } else {
             response.setResponseMessage("Failed to login");
             response.setSuccess(false);
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
@@ -110,11 +109,18 @@ public class adminService {
             return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
         }
 
-//        BeanUtils.copyProperties(user, userCheck, "id");
         User userFromDB = userCheck.get();
-        userFromDB.setUsername("rr");
-        userFromDB.setDob("123");
-//        userFromDB.setPassword(passwordEncoder.encode(user.getPassword()));
+        if (user.getUsername() != null && user.getUsername().equals(userFromDB.getUsername())) {
+            response.setSuccess(false);
+            response.setResponseMessage("Username already exists");
+            return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+        }
+
+        if (user.getUsername() != null) userFromDB.setUsername(user.getUsername());
+        if (user.getDob() != null) userFromDB.setDob(user.getDob());
+        if (user.getPassword() != null) userFromDB.setPassword(passwordEncoder.encode(user.getPassword()));
+        if (user.getEmail() != null) userFromDB.setEmail(user.getEmail());
+        userFromDB.setRole(Roles.USER.name());
 
         userRepository.save(userFromDB);
         System.out.println(userCheck.get());
@@ -129,7 +135,7 @@ public class adminService {
 
         Map<Integer, Map<String, String>> userMap = new HashMap<>();
 
-        for (User user: usersList) {
+        for (User user : usersList) {
             if (user.getRole() != null && !user.getRole().contains("ADMIN")) {
                 Map<String, String> userDetailsMap = new HashMap<>();
                 userDetailsMap.put("username", user.getUsername());
@@ -179,7 +185,7 @@ public class adminService {
         List<User> usersList = userRepository.findAll();
         Map<Integer, Map<String, String>> userMap = new HashMap<>();
 
-        for (User user: usersList) {
+        for (User user : usersList) {
             if (user.getRole() != null && !user.getRole().contains("ADMIN")) {
                 Map<String, String> userDetailsMap = new HashMap<>();
                 userDetailsMap.put("username", user.getUsername());
@@ -196,10 +202,4 @@ public class adminService {
         jsonResponse.setStatus(HttpStatus.ACCEPTED);
         return new ResponseEntity<>(jsonResponse, HttpStatus.ACCEPTED);
     }
-
-//    public ResponseEntity<CommonResponse> logout() {
-//        CommonResponse response = new CommonResponse();
-//
-//        jwtService.
-//    }
 }
