@@ -11,7 +11,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-import springREST.com.example.springREST.service.CustomAdminDetailsService;
 import springREST.com.example.springREST.service.CustomUserDetailsService;
 import springREST.com.example.springREST.service.JwtService;
 
@@ -22,16 +21,10 @@ public class jwtFilter extends OncePerRequestFilter {
 
     @Autowired
     private JwtService jwtService;
-//
-//    @Autowired
-//    @Lazy
-//    private AuthenticationManager authenticationManager;
 
     @Autowired
     private CustomUserDetailsService service;
 
-    @Autowired
-    private CustomAdminDetailsService adminDetailsService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
@@ -43,18 +36,12 @@ public class jwtFilter extends OncePerRequestFilter {
         if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
             token = authorizationHeader.substring(7);
             userName = jwtService.extractUsername(token);
-            System.out.println(token);
         }
 
         if (userName != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-
             UserDetails userDetails = service.loadUserByUsername(userName);
-            if (userDetails == null) {
-                userDetails = adminDetailsService.loadUserByUsername(userName);
-            }
 
             if (jwtService.isTokenValid(token, userDetails.getUsername())) {
-
                 UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken =
                         new UsernamePasswordAuthenticationToken(userDetails.getUsername(), userDetails.getPassword(), userDetails.getAuthorities());
                 usernamePasswordAuthenticationToken

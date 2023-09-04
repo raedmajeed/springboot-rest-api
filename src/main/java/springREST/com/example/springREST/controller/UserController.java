@@ -1,5 +1,6 @@
 package springREST.com.example.springREST.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -8,11 +9,13 @@ import springREST.com.example.springREST.dto.CommonResponse;
 import springREST.com.example.springREST.dto.LoggedResponse;
 import springREST.com.example.springREST.dto.LoginRequest;
 import springREST.com.example.springREST.entity.User;
+import springREST.com.example.springREST.service.JwtService;
 import springREST.com.example.springREST.service.userService;
 
 @RestController
 public class UserController {
-
+    @Autowired
+    JwtService jwtService;
     @Autowired
     private userService userService;
 
@@ -28,7 +31,11 @@ public class UserController {
     }
 
     @GetMapping("/welcome")
-    public String welcome() {
-        return "welcome";
+    public ResponseEntity<CommonResponse> welcome(@RequestHeader("Authorization") String header) {
+        CommonResponse response = new CommonResponse();
+        String username = jwtService.extractUsername(header.substring(7));
+        response.setResponseMessage("Username: " + username);
+        response.setSuccess(true);
+        return ResponseEntity.ok(response);
     }
 }

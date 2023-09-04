@@ -5,57 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9b36bcd-eccb-43ae-aac9-fb28bb1e0a25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/Constants/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/CustomDaoAuthenticationProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/adminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/adminRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/CustomAdminDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/JsonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/springREST/com/example/springREST/dao/UserRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/SpringRestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/SpringRestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/CustomDaoAuthenticationProvider.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/adminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/controller/adminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/LoggedResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dto/LoggedResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/Roles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/entity/UserRoles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/filter/jwtfilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/filter/jwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/dao/adminRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/filter/jwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/filter/jwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/CustomAdminDetailsService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/userService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/userService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/SpringRestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/SpringRestApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/ApplicationConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/config/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/adminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/controller/adminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dao/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dao/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dto/LoggedResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dto/LoggedResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/Roles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/UserRoles$UserRolesBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/entity/UserRoles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/dao/adminRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/filter/jwtfilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/filter/jwtfilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/CustomAdminDetailsService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/JwtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/JwtService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/adminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/adminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/userService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springREST/com/example/springREST/service/userService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-REST-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-REST-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-springREST.com.example.springREST.SpringRestApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/springREST.com.example.springREST.SpringRestApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/springREST/com/example/springREST/SpringRestApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +40,16 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/3.1.2/spring-data-commons-3.1.2.jar!/org/springframework/data/repository/CrudRepository.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -92,20 +69,110 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "development",
-    "last_opened_file_path": "/Users/raedabdulmajeed/Desktop/JAVA-projects/springboot-rest-api-jwt",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;multiple-dao&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/raedabdulmajeed/Desktop/JAVA-projects/springboot-rest-api-jwt&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="springREST.com.example.springREST.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.main">
     <configuration name="main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="springREST.com.example.springREST.SpringRestApplication" />
       <module name="spring-REST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.deleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-REST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springREST.com.example.springREST.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springREST.com.example.springREST.dao" />
+      <option name="MAIN_CLASS_NAME" value="springREST.com.example.springREST.dao.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="deleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.findAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-REST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springREST.com.example.springREST.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springREST.com.example.springREST.dao" />
+      <option name="MAIN_CLASS_NAME" value="springREST.com.example.springREST.dao.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="findAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.findByUsernameContaining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-REST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springREST.com.example.springREST.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springREST.com.example.springREST.dao" />
+      <option name="MAIN_CLASS_NAME" value="springREST.com.example.springREST.dao.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="findByUsernameContaining" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.findUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-REST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springREST.com.example.springREST.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springREST.com.example.springREST.dao" />
+      <option name="MAIN_CLASS_NAME" value="springREST.com.example.springREST.dao.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="findUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-REST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springREST.com.example.springREST.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="springREST.com.example.springREST.dao" />
+      <option name="MAIN_CLASS_NAME" value="springREST.com.example.springREST.dao.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,6 +190,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="JUnit.UserRepositoryTest.deleteUser" />
+      <item itemvalue="JUnit.UserRepositoryTest.findAllUsers" />
+      <item itemvalue="JUnit.UserRepositoryTest.findByUsernameContaining" />
+      <item itemvalue="JUnit.UserRepositoryTest.findUser" />
+      <item itemvalue="JUnit.UserRepositoryTest.update" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserRepositoryTest.update" />
+        <item itemvalue="JUnit.UserRepositoryTest.deleteUser" />
+        <item itemvalue="JUnit.UserRepositoryTest.findUser" />
+        <item itemvalue="JUnit.UserRepositoryTest.findAllUsers" />
+        <item itemvalue="JUnit.UserRepositoryTest.findByUsernameContaining" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,7 +230,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="development" />
+                        <option value="multiple-dao" />
                       </list>
                     </value>
                   </entry>
@@ -160,5 +244,47 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/springREST/com/example/springREST/dao/UserRepositoryTest.java</url>
+          <line>30</line>
+          <properties class="springREST.com.example.springREST.dao.UserRepositoryTest" method="findByUsernameContaining">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java</url>
+          <line>87</line>
+          <properties class="springREST.com.example.springREST.service.adminService" method="deleteUser">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/springREST/com/example/springREST/service/adminService.java</url>
+          <line>103</line>
+          <properties class="springREST.com.example.springREST.service.adminService" method="updateUser">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/springREST/com/example/springREST/dao/UserRepositoryTest.java</url>
+          <line>108</line>
+          <properties class="springREST.com.example.springREST.dao.UserRepositoryTest" method="update">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,5 +1,6 @@
 package springREST.com.example.springREST.service;
 
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -50,8 +51,8 @@ public class userService {
                 .dob(user.getDob())
                 .build();
 
-
         User userCheck = userRepository.findByUsername(user.getUsername());
+
         if (userCheck != null) {
             System.out.println("USER ALREADY EXISTS");
             response.setSuccess(false);
@@ -72,26 +73,22 @@ public class userService {
 
         LoggedResponse response = new LoggedResponse();
 
-        UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(
+        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
                 loginRequest.getUsername(),
                 loginRequest.getPassword(),
                 userDetails.getAuthorities()
         );
 
-        authenticationManager.authenticate(auth);
+        authenticationManager.authenticate(authenticationToken);
 
         if (!user.isEnabled()) {
             response.setResponseMessage("Failed to login");
-            response.setSuccess(true);
+            response.setSuccess(false);
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
 
-        System.out.println(userDetails.getAuthorities());
-
         for (GrantedAuthority grantedAuthority : userDetails.getAuthorities()) {
-            System.out.println(grantedAuthority.getAuthority());
-            System.out.println(user.getRole());
-            if (grantedAuthority.getAuthority().contains(user.getRole())) {
+            if (grantedAuthority.getAuthority().contains("USER")) {
                 jwtToken = jwtService.generateToken(userDetails.getUsername());
             }
         }
@@ -103,7 +100,7 @@ public class userService {
             return new ResponseEntity<>(response, HttpStatus.OK);
         }
         else {
-            response.setResponseMessage("Failed to login");
+            response.setResponseMessage("Failed to login, Admin Role");
             response.setSuccess(false);
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }

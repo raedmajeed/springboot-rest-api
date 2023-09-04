@@ -1,14 +1,16 @@
 package springREST.com.example.springREST.controller;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import springREST.com.example.springREST.dto.CommonResponse;
+import springREST.com.example.springREST.dto.JsonResponse;
 import springREST.com.example.springREST.dto.LoggedResponse;
 import springREST.com.example.springREST.dto.LoginRequest;
+import springREST.com.example.springREST.entity.User;
 import springREST.com.example.springREST.service.adminService;
 
 @RestController
@@ -21,8 +23,37 @@ public class adminController {
     }
 
     @GetMapping("/admin/fetch")
-    public ResponseEntity<String> welcomeScreen() {
-        return ResponseEntity.ok("yes done");
+    public ResponseEntity<CommonResponse> welcomeScreen() {
+        return adminService.displayAllUsers();
     }
+
+    @DeleteMapping("/admin/delete/{id}")
+    @Transactional
+    public ResponseEntity<CommonResponse> deleteUser(@PathVariable int id) {
+        return adminService.deleteUser(id);
+    }
+
+    @PutMapping("/admin/update/{id}")
+    public ResponseEntity<CommonResponse> updateUser(@PathVariable int id, @RequestBody User user) {
+        return adminService.updateUser(id, user);
+    }
+
+    @GetMapping("/admin/search")
+    public ResponseEntity<JsonResponse> searchUser(@RequestParam ("name") String searchChar) {
+        System.out.println(searchChar);
+        return adminService.searchUser(searchChar);
+    }
+
+    @GetMapping("/admin/displayUser/{id}")
+    public ResponseEntity<CommonResponse> displayUser(@PathVariable int id) {
+        return adminService.displayUser(id);
+    }
+
+//    @PostMapping("/admin/logout")
+//    public ResponseEntity<CommonResponse> logout() {
+//        return adminService.logout();
+//    }
+
+
 }
 

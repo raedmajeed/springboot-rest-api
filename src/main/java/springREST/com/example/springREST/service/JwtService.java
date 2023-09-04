@@ -41,11 +41,12 @@ public class JwtService {
     }
 
     public String generateToken(String username) {
-        Map<String, Objects> claims = new HashMap<>();
+        Map<String, String> claims = new HashMap<>();
+        claims.put("username", username);
         return createToken(claims, username);
     }
 
-    public String createToken(Map<String, Objects> claims, String username ) {
+    public String createToken(Map<String, String> claims, String username ) {
         return Jwts.builder()
                 .setClaims(claims)
                 .setSubject(username)

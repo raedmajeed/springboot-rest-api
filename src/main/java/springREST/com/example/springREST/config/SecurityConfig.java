@@ -8,15 +8,11 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import springREST.com.example.springREST.filter.jwtFilter;
-import springREST.com.example.springREST.service.CustomAdminDetailsService;
 import springREST.com.example.springREST.service.CustomUserDetailsService;
 
 @EnableWebSecurity
@@ -30,8 +26,6 @@ public class SecurityConfig {
     @Autowired
     private CustomUserDetailsService customUserDetailsService;
 
-    @Autowired
-    private CustomAdminDetailsService customAdminDetailsService;
 
     @Bean
     public SecurityFilterChain filterChain (HttpSecurity http) throws  Exception {
@@ -41,7 +35,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth ->
                        auth.requestMatchers("/user/login", "/user/register", "/admin/login").permitAll()
                                .requestMatchers("/welcome").hasRole("USER")
-                               .requestMatchers("/admin/fetch").hasRole("ADMIN")
+                               .requestMatchers("/admin/**").hasRole("ADMIN")
                                .anyRequest().authenticated()
                )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
@@ -54,8 +48,6 @@ public class SecurityConfig {
         DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
         daoAuthenticationProvider.setUserDetailsService(customUserDetailsService);
         daoAuthenticationProvider.setPasswordEncoder(passwordEncoder());
-
-        daoAuthenticationProvider.setUserDetailsService(customAdminDetailsService);
         return daoAuthenticationProvider;
     }
 
