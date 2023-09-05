@@ -16,29 +16,24 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import springREST.com.example.springREST.dao.UserRepository;
 
 import javax.sql.DataSource;
+import java.util.logging.Logger;
 
 @Configuration
 @RequiredArgsConstructor
 public class ApplicationConfig {
 
-    @Autowired
-    private UserRepository userRepository;
-
-    @Bean
-    public UserDetailsService userDetailsService() {
-        return username -> userRepository.findByUsername(username);
-    }
+//    @Autowired
+//    private UserRepository userRepository;
+//
+//    @Bean
+//    public UserDetailsService userDetailsService() {
+//        return username -> userRepository.findByUsername(username);
+//    }
 
 
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
-
-    @Bean
-    public String role() {
-        return "ROLE_USER";
-    }
-
 
 }

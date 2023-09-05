@@ -59,13 +59,5 @@ public class adminController {
         return adminService.lockUnlockUser(id, false);
     }
 
-
-
-//    @PostMapping("/admin/logout")
-//    public ResponseEntity<CommonResponse> logout() {
-//        return adminService.logout();
-//    }
-
-
 }
 

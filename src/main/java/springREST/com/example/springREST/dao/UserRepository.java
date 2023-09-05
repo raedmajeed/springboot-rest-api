@@ -17,9 +17,4 @@ public interface UserRepository extends JpaRepository<User, Long>, CrudRepositor
     List<User> findByUsernameContaining(String name);
     List<User> findAll();
     void deleteById(int id);
-
-//    @Query(
-//            value = "alter table user_table set "
-//    )
-//    User updateUser(int id);
 }

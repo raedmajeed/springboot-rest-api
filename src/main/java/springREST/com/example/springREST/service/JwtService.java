@@ -4,6 +4,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.security.Key;
@@ -25,11 +26,21 @@ public class JwtService {
 
     public <T> T extractClaims(String token, Function<Claims, T> resolveClaimer) {
         Claims claims = extractAllClaims(token);
-        return resolveClaimer.apply(claims);
+        try {
+            return resolveClaimer.apply(claims);
+        } catch (Exception error) {
+            System.out.println("TOKEN EXPIRED");
+        }
+        return null;
     }
 
     public Claims extractAllClaims(String token) {
-        return Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token).getBody();
+        try {
+            return Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token).getBody();
+        } catch (Exception error) {
+            System.out.println("TOKEN EXPIRED");
+        }
+        return null;
     }
 
     public boolean isTokenValid(String token, String username) {
